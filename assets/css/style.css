@@ -19,7 +19,7 @@ a {
 }
 
 #contact a {
-  padding: 13px;
+  padding: 10px;
 }
 
 #contact {
@@ -54,4 +54,21 @@ header {
 
 #work {
   line-height: 1.5;
+}
+
+@media (max-width: 810px) {
+
+header {
+  flex:none;
+}
+
+#page {
+  flex-direction: column;
+  width: auto;
+}
+
+#content {
+  margin: 15px 50px 0;
+}
+
 }
