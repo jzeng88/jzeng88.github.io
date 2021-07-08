@@ -1,32 +1,44 @@
 body {
   background-color: rgb(9, 36, 46);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h1,
 h2 {
   color: #f5f5f5;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #7c7c7c;
-  letter-spacing: 1px;
   word-break: keep-all;
+}
+
+ul {
+  text-decoration: none;
+  font-size: 1.3em;
+  word-break: keep-all;
+  padding-bottom: 15px;
 }
 
 a {
   text-decoration: none;
-  color: #f5f5f5;
+  border-bottom: none;
+  color: #7c7c7c;
+}
+
+a:hover {
+  border-bottom: 1px solid;
 }
 
 #contact a {
-  padding: 10px;
+  padding: 6px;
+  font-size: 0.8em;
 }
 
 #contact {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 #page {
@@ -35,12 +47,11 @@ a {
   width: 800px;
   margin: 0 auto;
   align-items: center;
-  justify-content: center;
 }
 
 header {
   text-align: center;
-  flex: 40%;
+  flex: 50%;
 }
 
 #header-container {
@@ -56,7 +67,7 @@ header {
 }
 
 #content {
-  margin: 0 50px;
+  flex: 50%;
 }
 
 #work {
@@ -71,9 +82,13 @@ header {
   #page {
     flex-direction: column;
     width: auto;
+    justify-content: center;
+    padding: 30px;
   }
 
   #content {
-    margin: 15px 50px 0;
+    flex: none;
+    padding: 30px 0;
+    text-align: center;
   }
 }
